@@ -1,3 +1,8 @@
+Warwick Creative Studios
+Full service creative agency offering web development, iOS app development, post production services, photography services and more
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
