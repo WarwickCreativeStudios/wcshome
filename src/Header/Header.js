@@ -34,7 +34,7 @@ const Header = () =>{
               </NavDropdown> */}
             </Nav>
           </Navbar.Collapse>
-          <Navbar.Brand href="#home"><span className='navtext'>Warwick Creative Studio</span></Navbar.Brand>
+          <Navbar.Brand href="#home"><span className='navtext'>Warwick Creative Studios</span></Navbar.Brand>
         </Container>
       </Navbar>
     )
