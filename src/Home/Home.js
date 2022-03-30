@@ -19,9 +19,9 @@ const Home = () => {
            <div id="welcome-message">
                <h1 className="text-center">Welcome To Warwick Creative Studios</h1>
                <h4 className="text-center">The Hudson Valley's Creative Agency</h4>
-               <p className="text-center">We specialize in developing web sites, web apps, iOS apps and creating materials to help support your buisness, promote your events and much more </p>
+               <p className="text-center">We specialize in developing web sites, web apps, iOS apps and creating materials to help support your buisness and so much more </p>
            </div>
-            
+
            <ContactForm />
         </div>
     )
