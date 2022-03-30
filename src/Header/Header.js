@@ -35,6 +35,10 @@ const Header = () =>{
             </Nav>
           </Navbar.Collapse>
           <Navbar.Brand href="#home"><span className='navtext'>Warwick Creative Studios</span></Navbar.Brand>
+          {/* <Navbar.Brand href="#home"><span className='navtext'>
+             daddy hayes
+             mommy singer hayes
+              </span></Navbar.Brand> */}
         </Container>
       </Navbar>
     )
