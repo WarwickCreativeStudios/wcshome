@@ -8,11 +8,11 @@ const Home = () => {
         <div id='home'>
            <Header />
            <div id="products">
-                <span id='prod-web'>Web Development</span>
-                <span className="prod-space">x</span>
-                <span id='prod-post'>Post Production</span>
-                <span className="prod-space">x</span>
-                <span id='prod-phot'>Photography</span>
+                <span id='prod-web'><a href="#">Web Development</a></span>
+                <span id='prod-space-1' className="prod-space"><li></li></span>
+                <span id='prod-post'><a href="#">Post Production</a></span>
+                <span id='prod-space-2' className="prod-space"><li></li></span>
+                <span id='prod-phot'><a href="#">Photography</a></span>
            </div>
         </div>
     )
