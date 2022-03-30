@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Field from '../Field/Field'
-import { Button } from 'bootstrap'
+import './contactformcss.css'
 
 const ContactForm = () =>{
     const [status, setStatus] = useState("Submit")
@@ -14,7 +14,7 @@ const ContactForm = () =>{
     
     const submitHandler = (e) =>{
         e.preventDefault()
-        console.log(userInfo.email)
+        console.log(userInfo.name, userInfo.email, userInfo.phone, userInfo.message)
     }
 
     const changeHandler = (e) => {
@@ -25,22 +25,32 @@ const ContactForm = () =>{
     }
 
     return(
-        <form onSubmit={submitHandler}>
+        <form id="contact-form" onSubmit={submitHandler}>
             <div>
                 <label>Name:</label>
-                <Field placeHolder={"name"} changeHandler={changeHandler} value={userInfo.name}/>
+                <div className='field'>
+                    <Field placeHolder={"name"} inputType={"input-field"} changeHandler={changeHandler} value={userInfo.name}/>
+                    
+                </div>
             </div>
             <div>
                 <label>Email:</label>
-                <Field placeHolder={"email"} changeHandler={changeHandler}  value={userInfo.email}/>
+                <div className='field'>
+                    <Field placeHolder={"email"} inputType={"input-field"} changeHandler={changeHandler}  value={userInfo.email}/>    
+                </div>
             </div>
             <div>
                 <label>Phone:</label>
-                <Field placeHolder={"phone"} changeHandler={changeHandler}  value={userInfo.phone} />
+                <div className='field'>
+                    <Field placeHolder={"phone"} inputType={"input-field"} changeHandler={changeHandler}  value={userInfo.phone} />
+                </div>    
             </div>
+                
             <div>
                 <label>Message:</label>
-                <Field placeHolder={"message"} changeHandler={changeHandler}  value={userInfo.message} />
+                <div className='field'>
+                    <Field placeHolder={"message"} inputType={"description-field"} changeHandler={changeHandler}  value={userInfo.message} />   
+                </div>    
             </div>
            <input type="submit"></input>
         </form>
