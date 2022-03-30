@@ -1,28 +1,52 @@
 import React, {useState} from 'react'
+import Field from '../Field/Field'
+import { Button } from 'bootstrap'
 
 const ContactForm = () =>{
     const [status, setStatus] = useState("Submit")
     const [showSubmit, setShowSubmit] = useState(true)
-
-    const handleSubmit = async (e) =>{
+    const [userInfo, setUserInfo] = useState({
+        name: ""
+        ,email: ""
+        ,phone: ""
+        ,message:""
+    })
+    
+    const submitHandler = (e) =>{
         e.preventDefault()
-        setStatus("Sending...")
-        const {name, email, message} = e.target.elements
-        let details = {
-            name: name.value
-            ,email: email.value
-            ,message: message.value
-        }
-
-        let response  = await fetch('http://localhost:5000/contact', {
-            method: "POST"
-            ,headers:{
-                "Content-Type": "application/json;charset=utf-8"
-            }
-            ,body: JSON.stringify(details)
-        });
-        setStatus("Submit")
-        let result = await response.json();
-        alert(result.status)
+        console.log(userInfo.email)
     }
+
+    const changeHandler = (e) => {
+       setUserInfo({
+           ...userInfo,
+           [e.target.placeholder]: e.target.value
+       })
+    }
+
+    return(
+        <form onSubmit={submitHandler}>
+            <div>
+                <label>Name:</label>
+                <Field placeHolder={"name"} changeHandler={changeHandler} value={userInfo.name}/>
+            </div>
+            <div>
+                <label>Email:</label>
+                <Field placeHolder={"email"} changeHandler={changeHandler}  value={userInfo.email}/>
+            </div>
+            <div>
+                <label>Phone:</label>
+                <Field placeHolder={"phone"} changeHandler={changeHandler}  value={userInfo.phone} />
+            </div>
+            <div>
+                <label>Message:</label>
+                <Field placeHolder={"message"} changeHandler={changeHandler}  value={userInfo.message} />
+            </div>
+           <input type="submit"></input>
+        </form>
+    )
+
+
 }
+
+export default ContactForm

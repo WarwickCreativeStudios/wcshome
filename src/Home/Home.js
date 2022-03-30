@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../Header/Header";
+import ContactForm from "../ContactForm/ContactForm";
 import './homecss.css'
 
 const Home = () => {
@@ -20,6 +21,8 @@ const Home = () => {
                <h4 className="text-center">The Hudson Valley's Creative Agency</h4>
                <p className="text-center">We specialize in developing web sites, web apps, iOS apps and creating materials to help support your buisness, promote your events and much more </p>
            </div>
+            
+           <ContactForm />
         </div>
     )
 }

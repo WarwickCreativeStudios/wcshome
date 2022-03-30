@@ -1,0 +1,90 @@
+.description-field{
+    height: 100px;
+    width: 550px;
+    font-size: 1.3em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.explanation-field{
+    height: 100px;
+    width: 400px;
+    font-size: 1.3em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.input-field{
+    height: 50px;
+    width: 550px;
+    font-size: 1.5em;
+}
+
+.password{
+    height: 50px;
+    width: 550px;
+    font-size: 1.5em;
+
+}
+.date-field{
+    height: 50px;
+    width: 70px;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.note-field{
+    height: 100px;
+    width: 75%;
+    font-size: 1em;
+}
+
+.price-field{
+    height: 30px;
+    width: 80%;
+    font-size: 1.1em;
+}
+
+/* .label-item{
+    position: absolute;
+} */
+
+@media(max-width: 380px){
+    .input-field{
+        height: 50px;
+        width: 250px;
+        font-size: 1.1em;
+    }
+    
+    .description-field{
+        height: 100px;
+        width: 250px;
+        font-size: 1.1em;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    .password{
+        height: 50px;
+        width: 250px;
+        font-size: 1.1em;
+    }
+
+    .price-field{
+        height: 50px;
+        width: 250px;
+        font-size: 1.1em;
+    }
+
+    label{
+        width: 1%;
+        left: 5px;
+    }
+
+    .explanation-field{
+        height: 100px;
+        width: 100%;
+        font-size: 1.3em;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    
+}
+
