@@ -23,9 +23,11 @@ const Header = () =>{
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="justify-content-end">
-              {/* <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+              <Nav.Link  href="#"><span className="nav-item">Web Development</span></Nav.Link>
+              <Nav.Link  href="#"><span className="nav-item">iOS Development</span></Nav.Link>
+              <Nav.Link  href="#"><span className="nav-item">Post Production</span></Nav.Link>
+              <Nav.Link  href="#"><span className="nav-item">Store</span></Nav.Link>
+              {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
@@ -34,7 +36,7 @@ const Header = () =>{
               </NavDropdown> */}
             </Nav>
           </Navbar.Collapse>
-          <Navbar.Brand href="#home"><span className='navtext'>Warwick Creative Studios</span></Navbar.Brand>
+          <Navbar.Brand href="/"><span className='navtext'>Warwick Creative Studios</span></Navbar.Brand>
           {/* <Navbar.Brand href="#home"><span className='navtext'>
              daddy hayes
              mommy singer hayes

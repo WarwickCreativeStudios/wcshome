@@ -12,8 +12,8 @@
 }
 
 .prod-space{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 #prod-web a{
@@ -40,7 +40,7 @@
 }
 
 #prod-web{
-    margin-left: 12%;
+    margin-left: 15%;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1s; /* Firefox < 16 */
      -ms-animation: fadein 1s; /* Internet Explorer */

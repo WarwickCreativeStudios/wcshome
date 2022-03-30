@@ -1,9 +1,16 @@
 .navbar{
     background-color: #43658B;
-    
+    color: #F6F6E9;
     text-align: right;
 
 }
+
+.nav-item{
+    color: #F6F6E9;
+    font-size: 1.2em;
+}
+
+
 
 .navtext{
     color: #F6F6E9;
