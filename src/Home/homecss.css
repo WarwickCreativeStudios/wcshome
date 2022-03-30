@@ -1,7 +1,7 @@
 #products{
     display: flex;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 7%;
     font-size: 2.5em;
 }
 
@@ -31,6 +31,14 @@
     text-decoration: none;
 }
 
+#welcome-message{
+    margin-top: 7%;
+}
+
+#welcome-message p{
+    font-size: 1.5em;
+}
+
 #prod-web{
     margin-left: 12%;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
@@ -38,38 +46,50 @@
      -ms-animation: fadein 1s; /* Internet Explorer */
       -o-animation: fadein 1s; /* Opera < 12.1 */
          animation: fadein 1s;
+    transition: all 0.2s ease 0s;
 }
+
+.hover-zoom img {
+    
+    width: 100%;
+  }
+  
+  #prod-web:hover, #prod-post:hover, #prod-phot:hover {
+    transform: scale(1.1);
+  }
 
 #prod-post{
-    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 3s; /* Firefox < 16 */
-     -ms-animation: fadein 3s; /* Internet Explorer */
-      -o-animation: fadein 3s; /* Opera < 12.1 */
-         animation: fadein 3s;
-}
-
-#prod-phot{
-    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 5s; /* Firefox < 16 */
-     -ms-animation: fadein 5s; /* Internet Explorer */
-      -o-animation: fadein 5s; /* Opera < 12.1 */
-         animation: fadein 5s;
-}
-
-#prod-space-1{
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s; /* Firefox < 16 */
      -ms-animation: fadein 2s; /* Internet Explorer */
       -o-animation: fadein 2s; /* Opera < 12.1 */
          animation: fadein 2s;
+         transition: all 0.2s ease 0s;
+}
+
+#prod-phot{
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+     -ms-animation: fadein 3s; /* Internet Explorer */
+      -o-animation: fadein 3s; /* Opera < 12.1 */
+         animation: fadein 3s;
+         transition: all 0.2s ease 0s;
+}
+
+#prod-space-1{
+    -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1.5s; /* Firefox < 16 */
+     -ms-animation: fadein 1.5s; /* Internet Explorer */
+      -o-animation: fadein 1.5s; /* Opera < 12.1 */
+         animation: fadein 1.5s;
 }
 
 #prod-space-2{
-    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 4s; /* Firefox < 16 */
-     -ms-animation: fadein 4s; /* Internet Explorer */
-      -o-animation: fadein 4s; /* Opera < 12.1 */
-         animation: fadein 4s;
+    -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2.5s; /* Firefox < 16 */
+     -ms-animation: fadein 2.5s; /* Internet Explorer */
+      -o-animation: fadein 2.5s; /* Opera < 12.1 */
+         animation: fadein 2.5s;
 }
 
 @keyframes fadein {
