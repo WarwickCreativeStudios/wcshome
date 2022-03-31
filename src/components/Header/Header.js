@@ -26,7 +26,7 @@ const Header = () =>{
               <Nav.Link  href="#"><span className="nav-item">Web Development</span></Nav.Link>
               <Nav.Link  href="#"><span className="nav-item">iOS Development</span></Nav.Link>
               <Nav.Link  href="#"><span className="nav-item">Post Production</span></Nav.Link>
-              <Nav.Link  href="#"><span className="nav-item">Store</span></Nav.Link>
+              <Nav.Link  href="/store"><span className="nav-item">Store</span></Nav.Link>
               {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
