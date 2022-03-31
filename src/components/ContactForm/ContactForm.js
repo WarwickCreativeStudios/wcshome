@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import Field from '../Field/Field'
 import './contactformcss.css'
 import emailjs from 'emailjs-com'
@@ -11,13 +11,23 @@ const ContactForm = () =>{
         ,phone: ""
         ,message:""
     })
-    
 
-    let id = process.env.REACT_APP_EMAIL_USERID
+    const form = useRef()
+    const serve = process.env.REACT_APP_EMAIL_SERIVCE_ID
+
+    debugger
 
     const submitHandler = (e) =>{
-        e.preventDefault()
-        console.log(userInfo.name, userInfo.email, userInfo.phone, userInfo.message)
+        // e.preventDefault()
+        e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
+
+        emailjs.sendForm('gmail', process.env.REACT_APP_EMAIL_TEMPLATE_ID, e.target, process.env.REACT_APP_EMAIL_USERID)
+        .then((result) => {
+            debugger
+            window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
+        }, (error) => {
+            console.log(error.text);
+        });
     }
 
     const changeHandler = (e) => {
@@ -41,21 +51,21 @@ const ContactForm = () =>{
             return false
         }
     }
-    debugger
+  
     return(
         
         <form id="contact-form" onSubmit={submitHandler}>
             <div>
                 <label>Name:</label>
                 <div className='field'>
-                    <Field placeHolder={"name"} inputType={"input-field"} changeHandler={changeHandler} value={userInfo.name} />
+                    <Field placeHolder={"name"} inputType={"input-field"} changeHandler={changeHandler} name={"user_name"} value={userInfo.name} />
                     { validate(userInfo.name) ? "Yes" : null}
                 </div>
             </div>
             <div>
                 <label>Email:</label>
                 <div className='field'>
-                    <Field placeHolder={"email"} inputType={"input-field"} changeHandler={changeHandler}  value={userInfo.email}/>    
+                    <Field placeHolder={"email"} inputType={"input-field"} changeHandler={changeHandler} name="user_email"  value={userInfo.email}/>    
                     {validEmail() ? "Yes" : null}
                 </div>
             </div>
@@ -69,7 +79,7 @@ const ContactForm = () =>{
             <div>
                 <label>Message:</label>
                 <div className='field'>
-                    <Field placeHolder={"message"} inputType={"description-field"} changeHandler={changeHandler}  value={userInfo.message} /> 
+                    <Field placeHolder={"message"} inputType={"description-field"} changeHandler={changeHandler} name="message"  value={userInfo.message} /> 
                     {validate(userInfo.message) ? "Yes" : null}  
                 </div>    
             </div>
