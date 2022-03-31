@@ -12,15 +12,10 @@ const ContactForm = () =>{
         ,message:""
     })
 
-    const form = useRef()
-    const serve = process.env.REACT_APP_EMAIL_SERIVCE_ID
 
-    debugger
 
     const submitHandler = (e) =>{
-        // e.preventDefault()
-        e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
-
+        e.preventDefault();  
         emailjs.sendForm('gmail', process.env.REACT_APP_EMAIL_TEMPLATE_ID, e.target, process.env.REACT_APP_EMAIL_USERID)
         .then((result) => {
             if(result.status === 200){
@@ -59,29 +54,29 @@ const ContactForm = () =>{
     return(
         
         <form id="contact-form" onSubmit={submitHandler}>
-            <div>
-                <label>Name:</label>
+            <div className='form-element'>
+                {/* <label>Name:</label> */}
                 <div className='field'>
                     <Field placeHolder={"name"} inputType={"input-field"} changeHandler={changeHandler} name={"user_name"} value={userInfo.name} />
                     { validate(userInfo.name) ? greenCheck() : null}
                 </div>
             </div>
             <div>
-                <label>Email:</label>
+                {/* <label>Email:</label> */}
                 <div className='field'>
                     <Field placeHolder={"email"} inputType={"input-field"} changeHandler={changeHandler} name="user_email"  value={userInfo.email}/>    
                     {validEmail() ? greenCheck() : null}
                 </div>
             </div>
             <div>
-                <label>Phone(Optional):</label>
+                {/* <label>Phone(Optional):</label> */}
                 <div className='field'>
                     <Field placeHolder={"phone"} inputType={"input-field"} changeHandler={changeHandler}  value={userInfo.phone} />
                 </div>    
             </div>
                 
             <div>
-                <label>Message:</label>
+                {/* <label>Message:</label> */}
                 <div className='field'>
                     <Field placeHolder={"message"} inputType={"description-field"} changeHandler={changeHandler} name="message"  value={userInfo.message} /> 
                     {validate(userInfo.message) ? greenCheck() : null}  

@@ -1,7 +1,6 @@
 #products{
     display: flex;
-    align-items: center;
-    margin-top: 7%;
+
     font-size: 2.5em;
 }
 

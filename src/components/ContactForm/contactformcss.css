@@ -1,13 +1,21 @@
 #contact-form{
-    margin-left: 33%;
+    
+    margin-left: 15%;
+    padding: 2%;
+    /* width: 70%; */
     margin-top: 5%;
     margin-bottom: 3%;
+    /* border: 1px solid #43658B; */
+}
+
+.field{
+    margin-left: 20%;
 }
 
 #send-button{
     background-color: #43658B;
     color: #F6F6E9;
-    margin-left: 8%;
+    margin-left: 25%;
     width: 30%;
     height: 60px;
     font-size: 1.5em;
