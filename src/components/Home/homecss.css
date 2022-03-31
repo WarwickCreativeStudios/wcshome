@@ -35,6 +35,10 @@
     margin-top: 7%;
 }
 
+#welcome-message h1{
+    text-shadow: 10px;
+}
+
 #welcome-message p{
     font-size: 1.5em;
 }

@@ -1,6 +1,7 @@
 import React from "react";
-import Header from "../Header/Header";
+import Header from "../Header/Header"
 import ContactForm from "../ContactForm/ContactForm";
+
 import './homecss.css'
 
 const Home = () => {
