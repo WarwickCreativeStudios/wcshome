@@ -23,7 +23,9 @@ const ContactForm = () =>{
 
         emailjs.sendForm('gmail', process.env.REACT_APP_EMAIL_TEMPLATE_ID, e.target, process.env.REACT_APP_EMAIL_USERID)
         .then((result) => {
-            debugger
+            if(result.status === 200){
+                alert('Your inquiry has been sent')
+            } 
             window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
         }, (error) => {
             console.log(error.text);
@@ -51,6 +53,8 @@ const ContactForm = () =>{
             return false
         }
     }
+
+    const greenCheck = () => <img src="16x16.png" alt='checkmark' />
   
     return(
         
@@ -59,14 +63,14 @@ const ContactForm = () =>{
                 <label>Name:</label>
                 <div className='field'>
                     <Field placeHolder={"name"} inputType={"input-field"} changeHandler={changeHandler} name={"user_name"} value={userInfo.name} />
-                    { validate(userInfo.name) ? "Yes" : null}
+                    { validate(userInfo.name) ? greenCheck() : null}
                 </div>
             </div>
             <div>
                 <label>Email:</label>
                 <div className='field'>
                     <Field placeHolder={"email"} inputType={"input-field"} changeHandler={changeHandler} name="user_email"  value={userInfo.email}/>    
-                    {validEmail() ? "Yes" : null}
+                    {validEmail() ? greenCheck() : null}
                 </div>
             </div>
             <div>
@@ -80,7 +84,7 @@ const ContactForm = () =>{
                 <label>Message:</label>
                 <div className='field'>
                     <Field placeHolder={"message"} inputType={"description-field"} changeHandler={changeHandler} name="message"  value={userInfo.message} /> 
-                    {validate(userInfo.message) ? "Yes" : null}  
+                    {validate(userInfo.message) ? greenCheck() : null}  
                 </div>    
             </div>
            {validFields() ? <input id="send-button" type="submit" value="Send"></input> : null}
