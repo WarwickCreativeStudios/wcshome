@@ -1,4 +1,16 @@
 #contact-form{
     margin-left: 33%;
     margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+#send-button{
+    background-color: #43658B;
+    color: #F6F6E9;
+    margin-left: 8%;
+    width: 30%;
+    height: 60px;
+    font-size: 1.5em;
+    border-radius: 20px;
+    border: none;
 }

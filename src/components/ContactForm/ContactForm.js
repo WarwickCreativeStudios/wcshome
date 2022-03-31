@@ -83,7 +83,7 @@ const ContactForm = () =>{
                     {validate(userInfo.message) ? "Yes" : null}  
                 </div>    
             </div>
-           {validFields() ? <input type="submit"></input> : null}
+           {validFields() ? <input id="send-button" type="submit" value="Send"></input> : null}
         </form>
     )
 

@@ -10,7 +10,7 @@ const Home = () => {
         <div id='home'>
            <Header />
            <div id="products">
-                <span id='prod-web'><a href="#">Web Development</a></span>
+                <span id='prod-web'><a href="#">Development</a></span>
                 <span id='prod-space-1' className="prod-space"><li></li></span>
                 <span id='prod-post'><a href="#">Post Production</a></span>
                 <span id='prod-space-2' className="prod-space"><li></li></span>

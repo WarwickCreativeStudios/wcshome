@@ -32,7 +32,7 @@
 }
 
 #welcome-message{
-    margin-top: 7%;
+    margin-top: 3%;
 }
 
 #welcome-message h1{
@@ -44,7 +44,7 @@
 }
 
 #prod-web{
-    margin-left: 15%;
+    margin-left: 20%;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1s; /* Firefox < 16 */
      -ms-animation: fadein 1s; /* Internet Explorer */
