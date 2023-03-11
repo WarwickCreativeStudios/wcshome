@@ -68,12 +68,12 @@ const ContactForm = () =>{
                     {validEmail() ? greenCheck() : null}
                 </div>
             </div>
-            <div>
+            {/* <div> */}
                 {/* <label>Phone(Optional):</label> */}
-                <div className='field'>
+                {/* <div className='field'>
                     <Field placeHolder={"phone"} inputType={"input-field"} changeHandler={changeHandler}  value={userInfo.phone} />
-                </div>    
-            </div>
+                </div>     */}
+            {/* </div> */}
                 
             <div>
                 {/* <label>Message:</label> */}

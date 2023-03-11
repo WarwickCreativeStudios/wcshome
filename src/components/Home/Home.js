@@ -9,6 +9,7 @@ const Home = () => {
     return(
         <div id='home'>
            <Header />
+           <img className="main-logo" src={'Bellvale_1-Cropped_WEBCROP_WHITE.png'} />
            <div id="products">
                 <span id='prod-web'><a href="#">Development</a></span>
                 <span id='prod-space-1' className="prod-space"><li></li></span>
