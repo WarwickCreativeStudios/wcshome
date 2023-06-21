@@ -1,6 +1,6 @@
 .description-field{
     height: 200px;
-    width: 95%;
+    width: 90%;
     font-size: 1.5em;
     border: none;
    
@@ -17,18 +17,19 @@ textarea{
     margin-top: 5px;
     border-color: #444941;
     background-color:#D5EEBB ;
+    width: 90%;
 }
 
 .explanation-field{
     height: 100px;
-    width: 100%;
+    width: 90%;
     font-size: 1.3em;
     font-family:Arial, Helvetica, sans-serif;
 }
 
 .input-field{
     height: 50px;
-    width: 100%;
+    width: 90%;
     font-size: 1.5em;
     color: #444941;
     /* padding-left: 2px; */

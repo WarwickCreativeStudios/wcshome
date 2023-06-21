@@ -80,9 +80,11 @@ const ContactForm = () =>{
             <div>
                 {/* <label>Message:</label> */}
                 <div className='field'>
+                
                     <Field placeHolder={"message"} inputType={"description-field"} changeHandler={changeHandler} name="message"  value={userInfo.message} /> 
-                    {validate(userInfo.message) ? greenCheck() : null}  
+                    {validate(userInfo.message) ? greenCheck() : null}
                 </div>    
+                
             </div>
            {validFields() ? <input id="send-button" type="submit" value="Send"></input> : null}
         </form>

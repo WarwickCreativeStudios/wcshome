@@ -15,7 +15,7 @@ const Home = () => {
                 <div id="products">
                         <span id='prod-post'><a href="#">Production</a></span>
                         <span id='prod-space-1' className="prod-space"><li></li></span>
-                        <span id='prod-web'><a href="#">Web Development</a></span>             
+                        <span id='prod-web'><a href="#">Web Solutions</a></span>             
                         <span id='prod-space-2' className="prod-space"><li></li></span>
                         <span id='prod-phot'><a href="#">Photography</a></span>
                         <span id='prod-space-3' className="prod-space"><li></li></span>
@@ -32,14 +32,15 @@ const Home = () => {
            <div className="space"></div>
 
            <div id="contact">
-               <h2 className="text-center">Visit us on Instagram!</h2> 
-               <a href='https://www.instagram.com/warwickcreativestudios/'><img className="ig-logo" src='—Pngtree—instagram icon instagram logo_3584853.png'></img></a>
-               <h3 className="text-center">Use the button or form below to email us for a free consultation</h3>
-               <div id="contact-box">
-               <h3 id="contact-button" className="text-center"><a  href="mailto:john@warwickcreativestudios.com">Contact</a></h3>
-            </div>
-               
-               
+                <h2 className="text-center">Visit us on Instagram!</h2> 
+                <a href='https://www.instagram.com/warwickcreativestudios/'><img className="ig-logo" src='—Pngtree—instagram icon instagram logo_3584853.png'></img></a>
+                <h3 className="text-center">Use the button or form below to email us for a free consultation</h3>
+                <a href="mailto:john@warwickcreativestudios.com">
+                    <div id="contact-box">
+                    <p>Contact</p>
+                    </div>
+                </a>
+                
            </div>
 
            <ContactForm />

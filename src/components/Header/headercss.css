@@ -2,17 +2,31 @@
     background-color: #D5EEBB;
     color: #444941;
     text-align: right;
+    border-bottom: 1px solid #444941;
 
 }
 
 .nav-item{
     color: #444941;
-    font-size: 2em;
+    width: 500px;
+    /* font-size: 1.5em; */
+}
+
+
+.nav-link{
+    width: 170px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.navbar-brand{
+    width: 30%;
+    height: 100px;
 }
 
 .header-logo{
-    width: 30%;
-    height: 30%;
+    width: 60%;
+    /* height: 30%; */
     /* right: 1% */
 }
 
