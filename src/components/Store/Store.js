@@ -23,7 +23,7 @@ const Store = () =>{
     return(
         <div>
             <Header/>
-            <h1>Photo Store!!</h1>
+            <h1>Photo Store!!!</h1>
             {/* <InstagramEmbed
                 url='https://instagr.am/p/Zw9o4/'
                 clientAccessToken='395824538752952|0855ec3be96d00aa0d47a9b2b168a2e9'
