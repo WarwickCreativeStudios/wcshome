@@ -19,7 +19,7 @@ const Header = () =>{
     return(
         <Navbar className="navbar" bg="navbar" expand="lg">
         <Container>
-          
+        <Navbar.Brand href="/"><img className="header-logo" src={'WCS-Name-ForWebHeader.png'} /></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="justify-content-end">
@@ -40,7 +40,7 @@ const Header = () =>{
             </Nav>
           </Navbar.Collapse>
           {/* <Navbar.Brand href="/"><span className='navtext'>Warwick Creative Studios</span></Navbar.Brand> */}
-          <Navbar.Brand href="/"><img className="header-logo" src={'WCS-Name-ForWebHeader.png'} /></Navbar.Brand>
+          {/* <Navbar.Brand href="/"><img className="header-logo" src={'WCS-Name-ForWebHeader.png'} /></Navbar.Brand> */}
         </Container>
       </Navbar>
     )

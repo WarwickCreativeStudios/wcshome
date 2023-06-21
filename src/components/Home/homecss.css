@@ -10,7 +10,7 @@
     /* width: 100%; */
     margin-left: auto;
     margin-right: auto;
-    font-size: 2.5em;
+    font-size: 250%;
 }
 
 #prod-items{
@@ -229,4 +229,85 @@ a:link{
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+@media(max-width: 915px){
+    #products{
+        display: flex;
+        /* width: 100%; */
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 200%;
+        font-weight: 300;
+    }
+}
+@media(max-width: 770px){
+    #products{
+        display: flex;
+        /* width: 100%; */
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 170%;
+        font-weight: 300;
+    }
+}
+@media(max-width: 653px){
+    #products{
+        display: flex;
+        /* width: 100%; */
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 150%;
+        font-weight: 300;
+    }
+}
+@media(max-width: 540px){
+    #products{
+        display: flex;
+        /* width: 100%; */
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 130%;
+        font-weight: 300;
+    }
+}
+@media(max-width: 415px){
+    #products{
+        display: flex;
+        /* width: 100%; */
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 100%;
+        font-weight: 300;
+    }
+}
+@media(max-width: 375px){
+    #products{
+        display: flex;
+        /* width: 100%; */
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 95%;
+        font-weight: 300;
+    }
+}
+@media(max-width: 360px){
+    #products{
+        display: flex;
+        /* width: 100%; */
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 93%;
+        font-weight: 300;
+    }
+}
+@media(max-width: 280px){
+    #products{
+        display: flex;
+        /* width: 100%; */
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 70%;
+        font-weight: 300;
+    }
 }
