@@ -23,9 +23,10 @@ const Header = () =>{
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="justify-content-end">
-              <Nav.Link  href="#"><span className="nav-item">Web Development</span></Nav.Link>
-              <Nav.Link  href="#"><span className="nav-item">iOS Development</span></Nav.Link>
-              <Nav.Link  href="#"><span className="nav-item">Post Production</span></Nav.Link>
+              <Nav.Link  href="#"><span className="nav-item">Services</span></Nav.Link>
+              {/* <Nav.Link  href="#"><span className="nav-item">iOS Development</span></Nav.Link> */}
+              <Nav.Link  href="#"><span className="nav-item">Work</span></Nav.Link>
+              {/* <Nav.Link  href="#"><span className="nav-item">Mission</span></Nav.Link> */}
               <Nav.Link  href="/store"><span className="nav-item">Store</span></Nav.Link>
               {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -36,7 +37,8 @@ const Header = () =>{
               </NavDropdown> */}
             </Nav>
           </Navbar.Collapse>
-          <Navbar.Brand href="/"><span className='navtext'>Warwick Creative Studios</span></Navbar.Brand>
+          {/* <Navbar.Brand href="/"><span className='navtext'>Warwick Creative Studios</span></Navbar.Brand> */}
+          <Navbar.Brand href="/"><img className="header-logo" src={'WCS-Name-ForWebHeader.png'} /></Navbar.Brand>
           {/* <Navbar.Brand href="#home"><span className='navtext'>
              daddy hayes
              mommy singer hayes

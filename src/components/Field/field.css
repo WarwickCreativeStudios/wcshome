@@ -1,34 +1,37 @@
 .description-field{
     height: 200px;
-    width: 550px;
+    width: 95%;
     font-size: 1.5em;
+    border: none;
+   
     /* font-family:Arial, Helvetica, sans-serif; */
 }
 
 input{
     border: none;
-    border-bottom: 1px solid #43658B;
-    background-color:#43658B
+    border-bottom: 1px solid #444941;
+    background-color:#D5EEBB
 }
 
 textarea{
     margin-top: 5px;
-    border-color: #43658B;
-    background-color:#43658B ;
+    border-color: #444941;
+    background-color:#D5EEBB ;
 }
 
 .explanation-field{
     height: 100px;
-    width: 400px;
+    width: 100%;
     font-size: 1.3em;
     font-family:Arial, Helvetica, sans-serif;
 }
 
 .input-field{
     height: 50px;
-    width: 550px;
+    width: 100%;
     font-size: 1.5em;
-    color: #F6F6E9;
+    color: #444941;
+    /* padding-left: 2px; */
 }
 
 .password{

@@ -60,6 +60,7 @@ const ContactForm = () =>{
                     <Field placeHolder={"name"} inputType={"input-field"} changeHandler={changeHandler} name={"user_name"} value={userInfo.name} />
                     { validate(userInfo.name) ? greenCheck() : null}
                 </div>
+                
             </div>
             <div>
                 {/* <label>Email:</label> */}
@@ -67,6 +68,7 @@ const ContactForm = () =>{
                     <Field placeHolder={"email"} inputType={"input-field"} changeHandler={changeHandler} name="user_email"  value={userInfo.email}/>    
                     {validEmail() ? greenCheck() : null}
                 </div>
+                
             </div>
             {/* <div> */}
                 {/* <label>Phone(Optional):</label> */}

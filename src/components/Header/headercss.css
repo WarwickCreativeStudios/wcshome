@@ -1,15 +1,20 @@
 .navbar{
-    background-color: #43658B;
-    color: #F6F6E9;
+    background-color: #D5EEBB;
+    color: #444941;
     text-align: right;
 
 }
 
 .nav-item{
-    color: #F6F6E9;
-    font-size: 1.2em;
+    color: #444941;
+    font-size: 2em;
 }
 
+.header-logo{
+    width: 30%;
+    height: 30%;
+    /* right: 1% */
+}
 
 
 .navtext{
