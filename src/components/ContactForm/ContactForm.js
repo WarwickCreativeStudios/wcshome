@@ -18,6 +18,7 @@ const ContactForm = () =>{
         e.preventDefault();  
         emailjs.sendForm('gmail', process.env.REACT_APP_EMAIL_TEMPLATE_ID, e.target, process.env.REACT_APP_EMAIL_USERID)
         .then((result) => {
+            debugger
             if(result.status === 200){
                 alert('Your inquiry has been sent')
             } 
@@ -84,9 +85,9 @@ const ContactForm = () =>{
                     <Field placeHolder={"message"} inputType={"description-field"} changeHandler={changeHandler} name="message"  value={userInfo.message} /> 
                     {validate(userInfo.message) ? greenCheck() : null}
                 </div>    
-                
+               
             </div>
-           {validFields() ? <input id="send-button" type="submit" value="Send"></input> : null}
+           {validFields() ? <input id="send-button" type="submit" value="Send"></input> :  <input id="send-button" disabled type="submit" value="Send"></input>}
         </form>
     )
 

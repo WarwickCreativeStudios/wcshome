@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Header/Header"
 import ContactForm from "../ContactForm/ContactForm";
+import ImgCarousel from "../ImageCarousel/ImageCarousel";
 
 import './homecss.css'
 
@@ -23,19 +24,37 @@ const Home = () => {
                 </div>
            </div>
 
+        <ImgCarousel />
+            
+        <div className="seperation"></div>
+
            <div id="welcome-message">
                <h1 className="text-center">Welcome To Warwick Creative Studios</h1>
-               <h3 className="text-center">The One-Stop-Shop For All Your Media Needs</h3>
-               <h3 className="text-center">From Beginning To End And Everything In Between</h3>
+               <h2 className="text-center">Concept to Creation</h2>
+               <h2 className="text-center">And So Much More!</h2>
+               <p>
+               Warwick Creative Studios is a creative agency located in the Hudson Valley region of New York that specializes in 
+               creating marketing materials and getting ads seen for our clients.</p>
+                <p>We offer a range of services including video production, photography, and graphic design. 
+                Our goal is to help you grow by providing high-quality creative services that engage and inspire your target audience.
+
+               </p>
            </div>
+
+        <div className="seperation"></div>
 
            <div className="space"></div>
 
            <div id="contact">
                 <h2 className="text-center">Visit us on Instagram!</h2> 
                 <a href='https://www.instagram.com/warwickcreativestudios/'><img className="ig-logo" src='—Pngtree—instagram icon instagram logo_3584853.png'></img></a>
+                
+                <div className="seperation-2"></div>
+                
+                <h1 className='text-center'>Contact Us</h1>
+                {/* <h2 className='text-center'>We Want To Hear From You!</h2> */}
                 <h3 className="text-center">Use the button or form below to email us for a free consultation</h3>
-                <a href="mailto:john@warwickcreativestudios.com">
+                <a href="mailto:contact@warwickcreativestudios.com">
                     <div id="contact-box">
                     <p>Contact</p>
                     </div>

@@ -20,25 +20,26 @@ const Header = () =>{
         <Navbar className="navbar" bg="navbar" expand="lg">
         <Container>
         <Navbar.Brand href="/"><img className="header-logo" src={'WCS-Name-ForWebHeader.png'} /></Navbar.Brand>
+        <div className='header-links'>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="justify-content-end">
-              <Nav.Link  href="#"><span className="nav-item">Video Production</span></Nav.Link>
-            
-              <Nav.Link  href="#"><span className="nav-item">Post Production</span></Nav.Link>
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="justify-content-end">
+                <NavDropdown title="Production" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/video-production">Video Production</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/post-production">Post Production</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/audio-production">Audio Production</NavDropdown.Item>
+                </NavDropdown>
+                <Nav.Link  href="/about"><span className="nav-item">About Us</span></Nav.Link>
+                <Nav.Link  href="/web"><span className="nav-item">Web Solutions</span></Nav.Link>
+                <Nav.Link  href="/ad-service"><span className="nav-item">Ad Servicing</span></Nav.Link>
+                
+              </Nav>
+            </Navbar.Collapse>
+
+        </div>
           
-              <Nav.Link  href="/store"><span className="nav-item-audio">Audio</span></Nav.Link>
-              <Nav.Link  href="/store"><span className="nav-item">Web Solutions</span></Nav.Link>
-              <Nav.Link  href="/store"><span className="nav-item">Ad Servicing</span></Nav.Link>
-              {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-              </NavDropdown> */}
-            </Nav>
-          </Navbar.Collapse>
           {/* <Navbar.Brand href="/"><span className='navtext'>Warwick Creative Studios</span></Navbar.Brand> */}
           {/* <Navbar.Brand href="/"><img className="header-logo" src={'WCS-Name-ForWebHeader.png'} /></Navbar.Brand> */}
         </Container>
