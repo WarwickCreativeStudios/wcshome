@@ -43,11 +43,19 @@
     width: 20%;
 }
 
+/* .drop-item{
+    color: #D5EEBB
+} */
+
 .dropdown-menu.show{ 
     background-color: #444941;
 }
 
 a.dropdown-item{
+    color: #D5EEBB
+}
+
+a:link{
     color: #D5EEBB
 }
 

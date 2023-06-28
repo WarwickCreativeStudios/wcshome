@@ -25,7 +25,7 @@ const Header = () =>{
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="justify-content-end">
                 <NavDropdown title="Production" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="/video-production">Video Production</NavDropdown.Item>
+                  <NavDropdown.Item href="/video-production" className='drop-item'>Video Production</NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="/post-production">Post Production</NavDropdown.Item>
                   <NavDropdown.Divider />
