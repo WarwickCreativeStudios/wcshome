@@ -16,7 +16,7 @@ const ContactForm = () =>{
 
     const submitHandler = (e) =>{
         e.preventDefault();  
-        emailjs.sendForm('gmail', process.env.REACT_APP_EMAIL_TEMPLATE_ID, e.target, process.env.REACT_APP_EMAIL_USERID)
+        emailjs.sendForm('service_31p0krb', process.env.REACT_APP_EMAIL_TEMPLATE_ID, e.target, process.env.REACT_APP_EMAIL_USERID)
         .then((result) => {
             debugger
             if(result.status === 200){

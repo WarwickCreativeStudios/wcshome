@@ -20,16 +20,18 @@ const Header = () =>{
         <Navbar className="navbar" bg="navbar" expand="lg">
         <Container>
         <Navbar.Brand href="/"><img className="header-logo" src={'WCS-Name-ForWebHeader.png'} /></Navbar.Brand>
-        <div className='header-links'>
+        <div className='header-links' >
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="justify-content-end">
                 <NavDropdown title="Production" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="/video-production" className='drop-item'>Video Production</NavDropdown.Item>
+                  <NavDropdown.Item href="/video-production" style={{color:'#D5EEBB'}} >Video Production</NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="/post-production">Post Production</NavDropdown.Item>
+                  <NavDropdown.Item href="/post-production" style={{color:'#D5EEBB'}}>Post Production</NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="/audio-production">Audio Production</NavDropdown.Item>
+                  <NavDropdown.Item href="/audio-production" style={{color:'#D5EEBB'}}>Audio Production</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/photography" style={{color:'#D5EEBB'}}>Photography</NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link  href="/about"><span className="nav-item">About Us</span></Nav.Link>
                 <Nav.Link  href="/web"><span className="nav-item">Web Solutions</span></Nav.Link>
