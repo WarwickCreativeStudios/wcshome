@@ -21,11 +21,11 @@ const ImgCarousel = () => {
                 
                 <div className="row-2">
                     <img className="work-image-size-2" src='./home-images/Oia Painted.png'/>
-                    <img className="work-image-size-4" src='./home-images/jm-1.jpg'/>
+                    <img className="work-image-size-4" src='./home-images/JM-1.jpg'/>
                     <img className="work-image-size-4" src='./home-images/JCole-2.png'/>
                     <img className="work-image-size-4" src='./home-images/Dublin Bricks.jpg'/>
-                    <img className="work-image-size-1" src='./home-images/KeKe-2.jpg'/>
-                    <img className="work-image-size-2" src='./home-images/AAr-2-cropped.jpg'/>
+                    <img className="work-image-size-1" src='./home-images/Keee-2.jpg'/>
+                    <img className="work-image-size-2" src='./home-images/AAr-2-Cropped.jpg'/>
                     <img className="work-image-size-2" src='./home-images/Skylar-1.png'/>
                     <img className="work-image-size-5" src='./home-images/Skater-2.png'/>
                 </div>
