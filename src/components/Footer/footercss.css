@@ -1,0 +1,12 @@
+#footer{
+    border-top: 1px solid black;
+    height: 100px;
+   
+}
+
+#copyright{
+    display: flex;
+    font-size: 1.5em;
+    margin-left: 10%;
+    
+}

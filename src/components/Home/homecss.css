@@ -106,7 +106,7 @@ li{
     /* display: flex; */
     margin: auto;
     width: 75vw;
-    height: 450px;
+    /* height: 450px; */
     border: 1px solid #444941 ;
     overflow: scroll;
 }
