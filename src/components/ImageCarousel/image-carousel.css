@@ -1,24 +1,26 @@
 .work-image-size-1{
+    
+    position: relative;
     width: 400px;
     height: 225px;
 }
 .work-image-size-2{
-    
+    position: relative;
     width: 320px;
     height: 225px;
 }
 .work-image-size-3{
-    
+    position: relative;
     width: 200px;
     height: 225px;
 }
 .work-image-size-4{
-    
+    position: relative;
     width: 250px;
     height: 225px;
 }
 .work-image-size-5{
-    
+    position: relative;
     width: 350px;
     height: 225px;
 }
@@ -27,8 +29,63 @@
 
 #rows{
     width: 196.8%;
+    overflow: hidden;
 }
 
+@media(max-width: 1670px){
+
+    #rows{
+        /* display: block; */
+        width: 228.5%
+    }
+    
+   
+}
+@media(max-width: 1441px){
+
+    #rows{
+        /* display: block; */
+        width: 228.5%
+    }
+    
+   
+}
+@media(max-width: 1438px){
+
+    #rows{
+        /* display: block; */
+        width: 230%
+    }
+    
+   
+}
+@media(max-width: 1430px){
+
+    #rows{
+        /* display: block; */
+        width: 235%
+    }
+    
+   
+}
+@media(max-width: 1398px){
+
+    #rows{
+        /* display: block; */
+        width: 236%
+    }
+    
+   
+}
+@media(max-width: 1025px){
+
+    #rows{
+        /* display: block; */
+        width: 322%
+    }
+    
+   
+}
 @media(max-width: 915px){
 
     #rows{
@@ -39,7 +96,11 @@
    
 }
 @media(max-width: 770px){
+    .work-image-size-5{
     
+        width: 575px;
+        height: 225px;
+    }
 }
 @media(max-width: 653px){
   

@@ -67,7 +67,7 @@ textarea{
 @media(max-width: 380px){
     .input-field{
         height: 50px;
-        width: 250px;
+        width: 175px;
         font-size: 1.1em;
     }
     
@@ -104,4 +104,6 @@ textarea{
 
     
 }
+
+
 
