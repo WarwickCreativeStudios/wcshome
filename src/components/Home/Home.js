@@ -37,7 +37,7 @@ const Home = () => {
                     <p>
                     Warwick Creative Studios is a creative agency located in the Hudson Valley region of New York that specializes in 
                     creating marketing materials and getting ads seen for our clients.</p>
-                    <p>We offer a range of services including video production, photography, and graphic design. 
+                    <p>We offer a range of services including video production, photography, audio production and ad servicing. 
                     Our goal is to help you grow by providing high-quality creative services that engage and inspire your target audience.
 
                     </p>
