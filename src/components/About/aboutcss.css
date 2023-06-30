@@ -1,0 +1,60 @@
+#about-body{
+    height: 225vh;
+    font-size: 125%;
+    font-weight: 100;;
+}
+
+#about-columns{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+#about-column-1, #about-column-2{
+    /* padding: 3%; */
+    /* margin-right: 10%; */
+    flex: 50%
+    
+}
+
+#about-column-1{
+    /* margin-left: 10%;
+    margin-right: 20%; */
+    text-align: right;
+    /* float: right; */
+
+}
+#about-column-1 p{
+    margin-left: 15%;
+
+}
+/* #about-column-2{
+    margin-right: 10%;
+
+} */
+
+.about-image{
+    width: 50%;
+}
+
+p{
+    line-height: 250%;
+    /* margin-top: auto; */
+    width: 75%;
+}
+
+h1{
+    margin-left: 8%;
+    margin-bottom: 5%;
+    /* font-weight: 800; */
+    /* font-size: 5em; */
+}
+
+#head-shot{
+    margin-bottom: 10%;
+}
+
+#aar-shoot{
+    margin-right: 10%;
+}

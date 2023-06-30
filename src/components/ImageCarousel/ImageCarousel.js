@@ -6,6 +6,7 @@ const ImgCarousel = () => {
         <div id='home-images-parent'>
             <div id='rows'>
                 <div className="row-1">
+                    <img className="work-image" src='./home-images/Cabazon.png'/>
                     <img id='paak' className="work-image" src='./home-images/Anderson.Paak.jpg'/>
                     <img id='col-bw'className="work-image" src='./home-images/Colosseum_BW.jpg'/>
                     <img id='aar-1'className="work-image" src='./home-images/AAR-1.png'/>
