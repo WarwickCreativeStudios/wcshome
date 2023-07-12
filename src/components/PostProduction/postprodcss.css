@@ -251,6 +251,29 @@ h1{
     #photo-column-2 p{
         margin: auto;
     }
+
+    #coloring{
+        width: 40%;
+    }
+    
+    #ae{
+           width: 40%;
+       }
+    
+    #mix{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 24px;
+    }
+    
+    .top-images{
+        display: flex;
+        margin: auto;
+        margin-top: 42px;
+        justify-content: center;
+        /* flex: 50%; */
+    }
     
 
 }

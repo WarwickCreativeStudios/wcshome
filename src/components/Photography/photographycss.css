@@ -240,6 +240,26 @@ h1{
     #photo-column-2 p{
         margin: auto;
     }
+
+    #boat-glasses{
+        /* width: 100%; */
+        margin-top: -60%;
+        margin-left: 50%;
+    }
+    
+    #earrings{
+        width: 90%;
+    }
+    
+    #bank{
+        width: 50%;
+        height: 200px;
+    }
+
+    #painted{
+        margin-top: -30%;
+     }
+    
     
 
 }

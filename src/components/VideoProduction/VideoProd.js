@@ -29,17 +29,15 @@ const VideoProd = () =>{
                         
                     </div>
                     <div id='photo-column-2'>
-                        <div className="photo-image-section">
+                        {/* <div className="photo-image-section"> */}
                             {/* <div className='section-1'> */}
                             <img  id='cole' className='photo-image' src='./audio-images/JCOLE-Set-1.png'></img>
                                 
                             {/* </div> */}
-                            <div className='section-2'>
                             
-                            </div>
                             
 
-                        </div>
+                        {/* </div> */}
                         <p>
                         At Warwick Creative Studios, our commitment to utilizing cutting-edge technology and innovative design solutions to produce only high-quality output from a vast range of video production services is second to none. Clients can depend on their video content to incorporate exceptional motion graphics, seamless animations, and captivating visuals.
                         </p>

@@ -16,10 +16,10 @@ const PostProd = () =>{
                         <span>Post-production is an essential part of the creative process that involves adding the final touches to a visual or audio project. </span> <span>Warwick Creative Studios </span> <span> can bring the visions of your businesses and events to life. </span>
                     </h3>
                 </div>
-                    <div className="top-images">
-                        <img id='coloring' className='photo-image'src='./post-images/Post-Prod-1.png'></img>
-                        <img id='ae' className='photo-image'src='./post-images/AE.png'></img>
-                    </div>
+                <div className="top-images">
+                    <img id='coloring' className='photo-image'src='./post-images/Post-Prod-1.png'></img>
+                    <img id='ae' className='photo-image'src='./post-images/AE.png'></img>
+                </div>
                         
                 <div id='photo-columns'>
                     

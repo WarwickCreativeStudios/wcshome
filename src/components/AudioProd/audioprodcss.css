@@ -154,7 +154,7 @@
 }
 
 #jh-mic{
-    width: 65%;
+    width: 60%;
 }
 
 #cole{
@@ -201,6 +201,7 @@ h1{
     }
     #photo-column-2 {
         text-align: center;
+        display: block;
         /* margin-left: 10%; */
     }
 
@@ -233,12 +234,26 @@ h1{
         width: 90%;
     }
 
-    #jh{
-        width: 50%;
-    }
 
     #photo-column-2 p{
         margin: auto;
+    }
+
+
+    #jh{
+        width: 80%;
+    }
+
+    #jh-aar{
+        width: 35%;
+    }
+    
+    #jh-mic{
+        width: 80%;
+    }
+    
+    #cole{
+        width: 80%;
     }
     
 
