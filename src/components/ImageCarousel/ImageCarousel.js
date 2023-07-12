@@ -14,14 +14,15 @@ const ImgCarousel = () => {
                     <img id='apigos-2-bw'className="work-image" src='./home-images/Apigos Nicholas-2 BW.jpg'/>
                     <img id='runner'className="work-image" src='./home-images/Runner-1.png'/>
                     <img id='jcole-1'className="work-image" src='./home-images/JCole-1.jpg'/>
-                    <img id='santorini' className="work-image" src='./home-images/Santorini_Cropped.png'/> 
+                    <img id='oia-painted' className="work-image" src='./home-images/Oia Painted.png'/>
+                   
                     
 
                     
                 </div>
                 
                 <div className="row-2">
-                    <img id='painted' className="work-image" src='./home-images/Oia Painted.png'/>
+                    
                     <img id='jm-1' className="work-image" src='./home-images/JM-1.jpg'/>
                     <img id='jcole-2' className="work-image" src='./home-images/JCole-2.png'/>
                     <img id='dub-bricks' className="work-image" src='./home-images/Dublin Bricks.jpg'/>
@@ -29,6 +30,8 @@ const ImgCarousel = () => {
                     <img id='aar-2' className="work-image" src='./home-images/AAr-2-Cropped.jpg'/>
                     <img id='skylar-2' className="work-image" src='./home-images/Skylar-1.png'/>
                     <img id='skater-2' className="work-image" src='./home-images/Skater-2.png'/> 
+                    <img id='santorini' className="work-image" src='./home-images/Santorini_Cropped.png'/> 
+                    <img id='wickham' className="work-image" src='./photo-images/WickhamLake-1.png'/>
                 </div>
             </div> 
         </div>
