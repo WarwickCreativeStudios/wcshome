@@ -239,13 +239,21 @@ h1{
         margin: auto;
     }
 
+    #jh-images{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
 
     #jh{
-        width: 80%;
+        width: 100%;
+        /* margin: auto; */
     }
 
     #jh-aar{
-        width: 35%;
+        width: 51%;
+        margin: auto;
     }
     
     #jh-mic{

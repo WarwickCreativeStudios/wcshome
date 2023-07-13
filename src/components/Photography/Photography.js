@@ -55,7 +55,7 @@ const Photography = () =>{
                 </div>
                 <h1 className='text-center'>Contact Us</h1>
                     {/* <h2 className='text-center'>We Want To Hear From You!</h2> */}
-                    <h3 className="text-center">Use the form below to contact us for more information</h3>
+                    <h4 id='contact' className="text-center">Use the form below to contact us for more information</h4>
                 <ContactForm />
             </div>
             <Footer />

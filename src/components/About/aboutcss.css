@@ -58,3 +58,43 @@ h1{
 #aar-shoot{
     margin-right: 10%;
 }
+
+@media(max-width: 425px){
+
+    #about-body{
+        height: 425vh;
+        font-size: 125%;
+        font-weight: 100;;
+    }
+
+    #about-columns{
+        display: block;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        
+    }
+
+    #about-column-1 {
+        margin: auto;
+        text-align: center;
+    
+    }
+    #about-column-2 {
+        margin: auto;
+        text-align: center;
+    
+    }
+    #about-column-2 p{
+        margin: auto;
+        text-align: center;
+    
+    }
+
+    #head-shot{
+        margin: auto;
+    }
+
+    #aar-shoot{
+        margin: auto;
+    }
+}

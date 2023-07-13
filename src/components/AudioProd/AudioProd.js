@@ -37,8 +37,11 @@ const AudioProd = () =>{
                     <div id='photo-column-2'>
                        
                             {/* <div className='section-1'> */}
+                            <div id='jh-images'>
                                 <img id='jh' className='photo-image' src='./photo-images/JH-TBP-Studio.png'></img>
                                 <img  id='jh-aar' className='photo-image' src='./photo-images/JH-AAR-ResizedForAudio.png'></img>
+                            </div>
+                                
                           
                         <p>
                          Our collaboration with renowned musicians has strengthened our abilities in crafting dynamic, immersive soundscapes. Additionally, our proficiency in live recordings and voice-over production enhances our versatility and enables them to tailor their services to diverse audio needs.  Whether you seek to enhance your brand's audio presence, create podcast advertisements or require professional audio services for a creative project, we stand ready to provide quality solutions that cultivate meaningful connections with your audience

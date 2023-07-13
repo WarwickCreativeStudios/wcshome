@@ -21,9 +21,9 @@ const About = () =>{
 
                     </div>
                     <div id='about-column-2'>
-                        <div >
-                            <img id='head-shot' className="about-image" src='./home-images/JH-headshot.jpg'></img>
-                        </div>
+                        
+                        <img id='head-shot' className="about-image" src='./home-images/JH-headshot.jpg'></img>
+                        
                         <p>
                             With over 20 years of experience in the industry, John Hayes the owner and proprietor of Warwick Creative Studios,  has the ability and expertise bring ideas to life. Whether it's creating engaging content or servicing your ads, Warwick Creative Studios is dedicated to delivering results that exceed expectations.
                         </p>
