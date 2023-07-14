@@ -224,9 +224,9 @@ h1{
         margin-bottom: 20px;
     }
 
-    #photo-body{
-        height: 650vh;
-        font-size: 125%;
+    #photo-body{    
+        height: 400vh;
+        font-size: 100%;
         /* font-weight: 500x; */
     }
 
@@ -265,4 +265,15 @@ h1{
     }
     
 
+}
+
+@media(max-width: 1024px){
+    #photo-body{
+        height: 400vh;
+    }
+}
+@media(max-width: 425px){
+    #photo-body{
+        height: 400vh;
+    }
 }

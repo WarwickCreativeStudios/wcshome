@@ -50,7 +50,7 @@ const ContactForm = () =>{
         }
     }
 
-    const greenCheck = () => <img src="16x16.png" alt='checkmark' />
+    const greenCheck = () => <img id='check-mark' src="16x16.png" alt='checkmark' />
   
     return(
         
