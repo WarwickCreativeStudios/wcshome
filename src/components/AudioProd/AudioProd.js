@@ -23,14 +23,16 @@ const AudioProd = () =>{
                         <p>
                         With a comprehensive range of offerings, we excel in recording, mixing, and sound design. Our vast expertise outside the studio, supporting and recording of live events. provides unparalleled sonic experiences that resonate with listeners. What sets Warwick Creative Studios apart is our extensive experience working with hundreds of major label and indie artists.
                         </p>
-                        <div className='column-1-images'>
-                            <img  id='cole' className="photo-image"  src='./audio-images/JCOLE-Set-1.png'></img>
-                            <img  id='jh-mic' className='photo-image' src='./audio-images/JH-Audio-2.png'></img>
+                       
+                        <div className='audio-column-1-images'>
+                            <img  id='jh-aar' className='photo-image' src='./photo-images/JH-AAR-ResizedForAudio.png'></img>
+                            {/* <div id='sub-images'>
+                                <img  id='cole' className="photo-image"  src='./audio-images/JCOLE-Set-1.png'></img>
+                                <img  id='jh-mic' className='photo-image' src='./audio-images/JH-Audio-2.png'></img>
+                            </div> */}
+                            
                            
                             
-                            
-                            {/* <img id='boat-glasses'className='photo-image' src='./photo-images/iFile_002.jpeg'></img>
-                            <img id='painted' className='photo-image' src='./home-images/Oia Painted.png'></img> */}
                         </div>
                         
                     </div>
@@ -39,7 +41,7 @@ const AudioProd = () =>{
                             {/* <div className='section-1'> */}
                             <div id='jh-images'>
                                 <img id='jh' className='photo-image' src='./photo-images/JH-TBP-Studio.png'></img>
-                                <img  id='jh-aar' className='photo-image' src='./photo-images/JH-AAR-ResizedForAudio.png'></img>
+                                
                             </div>
                                 
                           
