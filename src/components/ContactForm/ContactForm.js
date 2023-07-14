@@ -23,7 +23,7 @@ const ContactForm = () =>{
         // console.log('templateid: ', process.env.REACT_APP_EMAIL_TEMPLATE_ID) 
         // console.log('userid: ', process.env.REACT_APP_EMAIL_USERID)
         // debugger
-        emailjs.sendForm('gmail', process.env.REACT_APP_EMAIL_TEMPLATE_ID, e.target, process.env.REACT_APP_EMAIL_USERID)
+        emailjs.sendForm('gmail', 'template_lqjuj9t', e.target, process.env.REACT_APP_EMAIL_USERID)
         .then((result) => {
             
             if(result.status === 200){
