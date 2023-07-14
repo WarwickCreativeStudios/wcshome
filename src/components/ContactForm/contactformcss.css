@@ -46,6 +46,19 @@
     width: 3%;
 }
 
+h3 #sending{
+    display: flex;
+    margin-left: auto;
+    
+}
+
+#form-div h3{
+    display: flex;
+    margin: auto;
+}
+
+
+
 
 @media(max-width: 915px){
     #send-button{

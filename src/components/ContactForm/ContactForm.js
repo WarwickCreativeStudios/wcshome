@@ -12,10 +12,13 @@ const ContactForm = () =>{
         ,message:""
     })
 
+    const [submitted, setSubmitted] = useState(false)
+
 
 
     const submitHandler = (e) =>{
         e.preventDefault();  
+        setSubmitted(true)
         emailjs.sendForm('service_31p0krb', process.env.REACT_APP_EMAIL_TEMPLATE_ID, e.target, process.env.REACT_APP_EMAIL_USERID)
         .then((result) => {
             debugger
@@ -51,17 +54,16 @@ const ContactForm = () =>{
     }
 
     const greenCheck = () => <img id='check-mark' src="16x16.png" alt='checkmark' />
-  
-    return(
-        
-        <form id="contact-form" onSubmit={submitHandler}>
+
+    const form = () =>{
+        return(
+            <form id="contact-form" onSubmit={submitHandler}>
             <div className='form-element'>
                 {/* <label>Name:</label> */}
                 <div className='field'>
                     <Field placeHolder={"name"} inputType={"input-field"} changeHandler={changeHandler} name={"user_name"} value={userInfo.name} />
                     { validate(userInfo.name) ? greenCheck() : null}
                 </div>
-                
             </div>
             <div>
                 {/* <label>Email:</label> */}
@@ -71,24 +73,25 @@ const ContactForm = () =>{
                 </div>
                 
             </div>
-            {/* <div> */}
-                {/* <label>Phone(Optional):</label> */}
-                {/* <div className='field'>
-                    <Field placeHolder={"phone"} inputType={"input-field"} changeHandler={changeHandler}  value={userInfo.phone} />
-                </div>     */}
-            {/* </div> */}
-                
             <div>
                 {/* <label>Message:</label> */}
                 <div className='field'>
-                
                     <Field placeHolder={"message"} inputType={"description-field"} changeHandler={changeHandler} name="message"  value={userInfo.message} /> 
                     {validate(userInfo.message) ? greenCheck() : null}
                 </div>    
-               
+            
             </div>
-           {validFields() ? <input id="send-button" type="submit" value="Send"></input> :  <input id="send-button" disabled type="submit" value="Send"></input>}
+        {validFields() ? <input id="send-button" type="submit" value="Send"></input> :  <input id="send-button" disabled type="submit" value="Send"></input>}
         </form>
+        )
+    }
+  
+    return(
+        <div id='form-div'>
+            
+           {submitted ? <h3 id='sending'>Sending...</h3> : form()}
+        </div>
+        
     )
 
 
